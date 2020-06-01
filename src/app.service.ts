@@ -5,10 +5,6 @@ import { PRODUCTS } from './mock/products.mock';
 export class AppService {
   products = PRODUCTS;
 
-  getHello(): string {
-    return 'Hello World!';
-  }
-
   async getProducts() {
     return await this.products;
   }
